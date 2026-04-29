@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "413124098452",
+    "project_id": "stocker-fd4c3",
+    "storage_bucket": "stocker-fd4c3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413124098452:android:fdd4676c09d0e4603eb781",
+        "android_client_info": {
+          "package_name": "com.example.stocker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413124098452-m5llqkmlbhfhv8ckjkuk9l6hkoqpin1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZa3pp04bnohtsyKpUCSsfl7KY493v4r0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413124098452-m5llqkmlbhfhv8ckjkuk9l6hkoqpin1u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "413124098452-ohi3avrjd3je8o1el31513qpe4c4sae6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.stocker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413124098452:android:94d8d79851d45dba3eb781",
+        "android_client_info": {
+          "package_name": "com.misael2code.stocker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413124098452-m5llqkmlbhfhv8ckjkuk9l6hkoqpin1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZa3pp04bnohtsyKpUCSsfl7KY493v4r0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413124098452-m5llqkmlbhfhv8ckjkuk9l6hkoqpin1u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "413124098452-ohi3avrjd3je8o1el31513qpe4c4sae6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.stocker"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
