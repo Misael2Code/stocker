@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 720" width="380" height="720" style="background: transparent; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <filter id="shadowDetail" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Device Frame -->
+  <rect x="10" y="10" width="360" height="700" rx="36" fill="#121212" stroke="#2D3748" stroke-width="3" filter="url(#shadowDetail)"/>
+  
+  <!-- Notch -->
+  <ellipse cx="190" cy="24" rx="6" ry="6" fill="#000000"/>
+
+  <!-- Background App Behind Dimmer -->
+  <g opacity="0.3">
+    <rect x="10" y="44" width="360" height="52" fill="#18181B"/>
+    <text x="32" y="76" fill="#FFFFFF" font-size="18" font-weight="700">SaldoJá</text>
+    <rect x="32" y="120" width="316" height="44" rx="10" fill="#1E1E1E"/>
+    <rect x="32" y="180" width="316" height="120" rx="14" fill="#1E1E1E"/>
+  </g>
+
+  <!-- Dark Dim Overlay -->
+  <rect x="10" y="44" width="360" height="656" rx="0" fill="#000000" opacity="0.55"/>
+
+  <!-- Bottom Sheet Container -->
+  <g transform="translate(10, 210)">
+    <path d="M 0 24 C 0 10.7, 10.7 0, 24 0 L 336 0 C 349.3 0, 360 10.7, 360 24 L 360 490 L 0 490 Z" fill="#1E1E1E" stroke="#333333" stroke-width="1"/>
+    
+    <!-- Drag Handle -->
+    <rect x="160" y="12" width="40" height="4" rx="2" fill="#71717A"/>
+
+    <!-- Header -->
+    <g transform="translate(24, 32)">
+      <!-- Analytics Icon -->
+      <rect x="0" y="2" width="28" height="28" rx="6" fill="#1E293B"/>
+      <path d="M6 22 L10 14 L16 18 L22 8" stroke="#82B1FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      
+      <text x="36" y="22" fill="#FFFFFF" font-size="18" font-weight="700">Argila 2</text>
+      <text x="0" y="46" fill="#A1A1AA" font-size="12">Código: 1104</text>
+      
+      <line x1="0" y1="60" x2="312" y2="60" stroke="#2D3748" stroke-width="1"/>
+    </g>
+
+    <!-- Deposit 1: Depósito de Materiais Fil 01 -->
+    <g transform="translate(24, 106)">
+      <rect width="312" height="162" rx="12" fill="#141414" stroke="#2A2A2A" stroke-width="1"/>
+      
+      <text x="14" y="24" fill="#FFFFFF" font-size="14" font-weight="700">Depósito de Materiais Fil 01</text>
+      <text x="14" y="40" fill="#71717A" font-size="11">Empresa: 1  •  Derivação: Padrão</text>
+
+      <!-- Metrics Grid -->
+      <!-- Metric: Disponivel -->
+      <g transform="translate(14, 52)">
+        <rect width="136" height="30" rx="6" fill="#262626"/>
+        <text x="10" y="19" fill="#A1A1AA" font-size="10">Disponível:</text>
+        <text x="126" y="19" fill="#4ADE80" font-size="11" font-weight="700" text-anchor="end">24,00</text>
+      </g>
+      <!-- Metric: Reservado -->
+      <g transform="translate(162, 52)">
+        <rect width="136" height="30" rx="6" fill="#262626"/>
+        <text x="10" y="19" fill="#A1A1AA" font-size="10">Reservado:</text>
+        <text x="126" y="19" fill="#FACC15" font-size="11" font-weight="700" text-anchor="end">0,00</text>
+      </g>
+      <!-- Metric: Bloqueado -->
+      <g transform="translate(14, 88)">
+        <rect width="136" height="30" rx="6" fill="#262626"/>
+        <text x="10" y="19" fill="#A1A1AA" font-size="10">Bloqueado:</text>
+        <text x="126" y="19" fill="#F87171" font-size="11" font-weight="700" text-anchor="end">0,00</text>
+      </g>
+      <!-- Metric: Consig. Cliente -->
+      <g transform="translate(162, 88)">
+        <rect width="136" height="30" rx="6" fill="#262626"/>
+        <text x="10" y="19" fill="#A1A1AA" font-size="10">Consig. Cliente:</text>
+        <text x="126" y="19" fill="#E2E8F0" font-size="11" font-weight="700" text-anchor="end">0,00</text>
+      </g>
+      <!-- Metric: Consig. Fornecedor -->
+      <g transform="translate(14, 124)">
+        <rect width="284" height="28" rx="6" fill="#262626"/>
+        <text x="10" y="18" fill="#A1A1AA" font-size="10">Consig. Fornecedor:</text>
+        <text x="274" y="18" fill="#E2E8F0" font-size="11" font-weight="700" text-anchor="end">0,00</text>
+      </g>
+    </g>
+
+    <!-- Deposit 2: Depósito Distribuidor -->
+    <g transform="translate(24, 280)">
+      <rect width="312" height="162" rx="12" fill="#141414" stroke="#2A2A2A" stroke-width="1"/>
+      
+      <text x="14" y="24" fill="#FFFFFF" font-size="14" font-weight="700">Depósito Distribuidor</text>
+      <text x="14" y="40" fill="#71717A" font-size="11">Empresa: 1  •  Derivação: Padrão</text>
+
+      <!-- Metrics Grid -->
+      <g transform="translate(14, 52)">
+        <rect width="136" height="30" rx="6" fill="#262626"/>
+        <text x="10" y="19" fill="#A1A1AA" font-size="10">Disponível:</text>
+        <text x="126" y="19" fill="#4ADE80" font-size="11" font-weight="700" text-anchor="end">50.000,00</text>
+      </g>
+      <g transform="translate(162, 52)">
+        <rect width="136" height="30" rx="6" fill="#262626"/>
+        <text x="10" y="19" fill="#A1A1AA" font-size="10">Reservado:</text>
+        <text x="126" y="19" fill="#FACC15" font-size="11" font-weight="700" text-anchor="end">0,00</text>
+      </g>
+      <g transform="translate(14, 88)">
+        <rect width="136" height="30" rx="6" fill="#262626"/>
+        <text x="10" y="19" fill="#A1A1AA" font-size="10">Bloqueado:</text>
+        <text x="126" y="19" fill="#F87171" font-size="11" font-weight="700" text-anchor="end">0,00</text>
+      </g>
+      <g transform="translate(162, 88)">
+        <rect width="136" height="30" rx="6" fill="#262626"/>
+        <text x="10" y="19" fill="#A1A1AA" font-size="10">Consig. Cliente:</text>
+        <text x="126" y="19" fill="#E2E8F0" font-size="11" font-weight="700" text-anchor="end">0,00</text>
+      </g>
+      <g transform="translate(14, 124)">
+        <rect width="284" height="28" rx="6" fill="#262626"/>
+        <text x="10" y="18" fill="#A1A1AA" font-size="10">Consig. Fornecedor:</text>
+        <text x="274" y="18" fill="#E2E8F0" font-size="11" font-weight="700" text-anchor="end">0,00</text>
+      </g>
+    </g>
+
+  </g>
+
+  <!-- Bottom Home Bar -->
+  <rect x="145" y="694" width="90" height="4" rx="2" fill="#52525B"/>
+</svg>
