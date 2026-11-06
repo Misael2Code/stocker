@@ -65,7 +65,7 @@ Este aplicativo foi **idealizado e implementado por mim como um teste de conheci
 ## ⚠️ Aviso Importante sobre a Execução (Integração Senior)
 
 > [!IMPORTANT]
-> **Atenção para avaliadores, recrutadores e visitantes:**  
+> **Sobre a execução local:**  
 > O Stocker é um aplicativo corporativo que consome o WebService proprietário do **Senior Sistemas (`sapiens_Synccom_senior_g5_f1_int_suprimentos_estoque`)**, o qual tipicamente reside na rede interna (intranet/VPN) ou gateway privado da empresa.
 >
 > Por esse motivo, **ao clonar este repositório sem acesso a um servidor Senior ativo, as requisições de consulta de estoque resultarão em falha de conexão**.
@@ -231,7 +231,7 @@ Para preservar a integridade do código e proteger credenciais sensíveis de inf
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/stocker.git
+   git clone https://github.com/Misael2Code/stocker.git
    cd stocker
    ```
 
@@ -261,7 +261,7 @@ Para preservar a integridade do código e proteger credenciais sensíveis de inf
 
 Desenvolvido por **Misael Dias**
 
-- **LinkedIn:** [linkedin.com/in/misael-dias](https://www.linkedin.com/in/misaeldiaslima/) *(ou adicione seu link de perfil)*
+- **LinkedIn:** [linkedin.com/in/misael-dias](https://www.linkedin.com/in/misaeldiaslima/)
 - **GitHub:** [@misael2code](https://github.com/misael2code)
 - **E-mail:** [msl.trp@gmail.com](mailto:msl.trp@gmail.com)
 
