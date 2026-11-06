@@ -1,65 +1,7 @@
-HEAD
-# Stocker
 
-## SaldoJá — Estoque em segundos
-
-O **Stocker** é um aplicativo mobile desenvolvido em Flutter para consulta rápida de estoque integrado ao ERP Senior. A aplicação permite que usuários consultem produtos por código ou descrição e visualizem seus saldos de forma organizada, incluindo a quantidade disponível em cada depósito e informações detalhadas sobre reservas, bloqueios e consignações.
-
-O projeto foi desenvolvido com foco em uma experiência simples para o usuário final, mantendo uma arquitetura preparada para integração com serviços externos, múltiplas empresas e diferentes níveis de acesso.
-
----
-
-## 📱 Sobre o aplicativo
-
-O Stocker nasceu a partir de uma necessidade comum em ambientes que utilizam ERP: consultar rapidamente a disponibilidade de um produto sem precisar acessar diretamente o sistema de gestão.
-
-Por meio do **SaldoJá**, o usuário pode:
-
-- 🔎 Buscar produtos por código ou descrição
-- 📦 Visualizar o estoque disponível por depósito
-- 📊 Visualizar o saldo total do produto
-- 🟢 Identificar visualmente níveis de estoque
-- 🔐 Trabalhar com autenticação via Google
-- 🏢 Selecionar e alternar entre empresas
-- 👥 Gerenciar usuários de acordo com seu perfil
-- 📋 Consultar informações detalhadas do estoque
-- ⚠️ Receber mensagens claras em situações de erro
-- 🌙 Utilizar a aplicação em temas claro e escuro
-
----
-
-## 🏗️ Arquitetura
-
-O projeto utiliza uma estrutura organizada por funcionalidades, buscando separar responsabilidades entre apresentação, domínio e acesso a dados.
-
-```text
-lib/
-├── core/
-│   ├── theme/
-│   └── widgets/
-│
-├── features/
-│   ├── auth/
-│   │   ├── data/
-│   │   ├── domain/
-│   │   └── presentation/
-│   │
-│   ├── company/
-│   │   ├── data/
-│   │   ├── domain/
-│   │   └── presentation/
-│   │
-│   └── stock/
-│       ├── data/
-│       ├── domain/
-│       └── presentation/
-│
-└── shared/
-    └── services/
-=======
 <div align="center">
 
-  <img src="images/ChatGPT%20Image%20Apr%2029,%202026,%2003_05_39%20PM.png" alt="Stocker Logo" width="180" style="border-radius: 24px; margin-bottom: 12px;"/>
+  <img src="images/ChatGPT%20Image%20Apr%2029,%202026,%2003_05_39%20PM.png" alt="Stocker Logo" width="180" style="border-radius: 24px; margin-bottom: 12px;" />
 
   # Stocker (SaldoJá)
   ### Autonomia e Mobilidade para Consulta de Estoque no Senior Sistemas
@@ -70,11 +12,11 @@ lib/
   </p>
 
   <p>
-    <img src="https://img.shields.io/badge/Flutter-3.7+-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter"/>
-    <img src="https://img.shields.io/badge/Dart-3.7+-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart"/>
-    <img src="https://img.shields.io/badge/Firebase-Auth%20%26%20Firestore-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase"/>
-    <img src="https://img.shields.io/badge/ERP-Senior%20Sistemas%20(G5)-004B87?style=for-the-badge" alt="Senior Sistemas"/>
-    <img src="https://img.shields.io/badge/Arquitetura-Clean%20Architecture-4CAF50?style=for-the-badge" alt="Clean Architecture"/>
+    <img src="https://img.shields.io/badge/Flutter-3.7+-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
+    <img src="https://img.shields.io/badge/Dart-3.7+-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" />
+    <img src="https://img.shields.io/badge/Firebase-Auth%20%26%20Firestore-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
+    <img src="https://img.shields.io/badge/ERP-Senior%20Sistemas%20(G5)-004B87?style=for-the-badge" alt="Senior Sistemas" />
+    <img src="https://img.shields.io/badge/Arquitetura-Clean%20Architecture-4CAF50?style=for-the-badge" alt="Clean Architecture" />
   </p>
 
   <p>
@@ -96,13 +38,15 @@ lib/
 Nas indústrias, distribuidoras e centros de distribuição que utilizam o ERP **Senior Sistemas (Sapiens / G5)**, as operações de tomada de decisão não acontecem apenas atrás de uma mesa de escritório.
 
 > **O Cenário Comum:**  
-> Gerentes de operações, supervisores de logística, diretores industriais e compradores passam grande parte do seu dia no chão de fábrica, vistoriando docas de expedição, em reuniões com fornecedores ou em trânsito. 
-> 
+> Gerentes de operações, supervisores de logística, diretores industriais e compradores passam grande parte do seu dia no chão de fábrica, vistoriando docas de expedição, em reuniões com fornecedores ou em trânsito.
+>
 > Sempre que surge uma dúvida crítica de estoque — *"Temos a matéria-prima X no Depósito da Filial 01?"*, *"Esse saldo está disponível ou já está reservado/bloqueado para faturamento?"* —, o gestor precisava:
+>
 > 1. Ligar ou mandar mensagem para alguém que estivesse na frente de um computador rodando o terminal pesado do ERP; ou
 > 2. Interromper sua vistoria e se deslocar até uma estação fixa de trabalho.
 
 ### A Solução
+
 O **Stocker** (também referenciado no app como **SaldoJá**) nasceu para romper essa barreira física. Trata-se de uma ferramenta móvel, leve e responsiva, que permite ao gestor **consultar saldos em tempo real diretamente do smartphone em poucos segundos**, garantindo independência operacional mesmo quando distante do software operacional desktop da empresa.
 
 ---
@@ -122,10 +66,10 @@ Este aplicativo foi **idealizado e implementado por mim como um teste de conheci
 
 > [!IMPORTANT]
 > **Atenção para avaliadores, recrutadores e visitantes:**  
-> O Stocker é um aplicativo corporativo que consome o WebService proprietário do **Senior Sistemas (`sapiens_Synccom_senior_g5_f1_int_suprimentos_estoque`)**, o qual tipicamente reside na rede interna (intranet/VPN) ou gateway privado da empresa.  
-> 
-> Por esse motivo, **ao clonar este repositório sem acesso a um servidor Senior ativo, as requisições de consulta de estoque resultarão em falha de conexão**.  
-> 
+> O Stocker é um aplicativo corporativo que consome o WebService proprietário do **Senior Sistemas (`sapiens_Synccom_senior_g5_f1_int_suprimentos_estoque`)**, o qual tipicamente reside na rede interna (intranet/VPN) ou gateway privado da empresa.
+>
+> Por esse motivo, **ao clonar este repositório sem acesso a um servidor Senior ativo, as requisições de consulta de estoque resultarão em falha de conexão**.
+>
 > Para demonstrar o funcionamento real da aplicação de ponta a ponta com dados reais de estoque e resposta do servidor Senior, disponibilizamos abaixo as **telas e gravações em vídeo** do aplicativo rodando.
 
 ---
@@ -139,15 +83,15 @@ O aplicativo conta com suporte dinâmico a **Tema Escuro (Dark Mode)** e **Tema 
     <tr>
       <td align="center">
         <strong>Consulta de Estoque (Dark Mode)</strong><br/><br/>
-        <img src="docs/screenshots/screen-search-dark.svg" width="310" alt="Consulta de Estoque Dark"/>
+        <img src="docs/screenshots/screen-search-dark.svg" width="310" alt="Consulta de Estoque Dark" />
       </td>
       <td align="center">
         <strong>Extrato Detalhado por Depósito</strong><br/><br/>
-        <img src="docs/screenshots/screen-details-sheet.svg" width="310" alt="Detalhamento por Depósito"/>
+        <img src="docs/screenshots/screen-details-sheet.svg" width="310" alt="Detalhamento por Depósito" />
       </td>
       <td align="center">
         <strong>Gestão Multi-empresa (Admin)</strong><br/><br/>
-        <img src="docs/screenshots/screen-company-setup.svg" width="310" alt="Configuração de Empresa"/>
+        <img src="docs/screenshots/screen-company-setup.svg" width="310" alt="Configuração de Empresa" />
       </td>
     </tr>
   </table>
@@ -188,36 +132,36 @@ No diretório [`docs/`](docs/) encontram-se gravações completas de uso do apli
 O projeto adota os princípios de **Clean Architecture**, isolando regras de negócio e contratos de infraestrutura externa:
 
 <div align="center">
-  <img src="docs/screenshots/architecture-flow.svg" width="100%" alt="Arquitetura do Stocker"/>
+  <img src="docs/screenshots/architecture-flow.svg" width="100%" alt="Arquitetura do Stocker" />
 </div>
 
-```
+```text
 lib/
-├── app.dart                                # Injeção de dependências e MaterialApp
-├── firebase_options.dart                   # Configuração das plataformas Firebase
-├── main.dart                               # Entrypoint com inicializações assíncronas
+├── app.dart                                  # Injeção de dependências e MaterialApp
+├── firebase_options.dart                     # Configuração das plataformas Firebase
+├── main.dart                                 # Entrypoint com inicializações assíncronas
 │
-├── core/                                   # Recursos transversais e Design System
-│   ├── pages/splash_page.dart              # Roteamento inteligente de sessão
-│   ├── theme/                              # AppTheme, AppColors, AppTextStyles
-│   ├── utils/number_parser.dart            # Parser para numeração brasileira (pt-BR)
-│   └── widgets/app_system_ui.dart          # Ajuste de status bar e navigation bar
+├── core/                                     # Recursos transversais e Design System
+│   ├── pages/splash_page.dart                # Roteamento inteligente de sessão
+│   ├── theme/                                # AppTheme, AppColors, AppTextStyles
+│   ├── utils/number_parser.dart              # Parser para numeração brasileira (pt-BR)
+│   └── widgets/app_system_ui.dart            # Ajuste de status bar e navigation bar
 │
 ├── features/
-│   ├── auth/                               # Módulo de Autenticação
-│   │   ├── data/                           # AuthRemoteDataSource, AuthRepositoryImpl
-│   │   ├── domain/                         # UserEntity, AuthRepository, UseCases
-│   │   └── presentation/                   # AuthController, LoginPage
+│   ├── auth/                                 # Módulo de Autenticação
+│   │   ├── data/                             # AuthRemoteDataSource, AuthRepositoryImpl
+│   │   ├── domain/                           # UserEntity, AuthRepository, UseCases
+│   │   └── presentation/                     # AuthController, LoginPage
 │   │
-│   ├── company/                            # Módulo Multi-empresa / Filiais
-│   │   ├── data/                           # CompanyRemoteDataSource, CompanyModel
-│   │   ├── domain/                         # CompanyEntity, CompanyRepository, UseCases
-│   │   └── presentation/                   # CompanyController, CompanyPage, AddCompanySheet
+│   ├── company/                              # Módulo Multi-empresa / Filiais
+│   │   ├── data/                             # CompanyRemoteDataSource, CompanyModel
+│   │   ├── domain/                           # CompanyEntity, CompanyRepository, UseCases
+│   │   └── presentation/                     # CompanyController, CompanyPage, AddCompanySheet
 │   │
-│   └── stock/                              # Módulo de Consulta de Estoque
-│       ├── data/                           # StockRemoteDataSource (SOAP), StockRepositoryImpl
-│       ├── domain/                         # StockEntity, StockResult, StockRepository
-│       └── presentation/                   # StockController, HomePage, StockDetailSheet, UserManagementPage
+│   └── stock/                                # Módulo de Consulta de Estoque
+│       ├── data/                             # StockRemoteDataSource (SOAP), StockRepositoryImpl
+│       ├── domain/                           # StockEntity, StockResult, StockRepository
+│       └── presentation/                     # StockController, HomePage, StockDetailSheet, UserManagementPage
 │
 └── shared/
     └── services/company_session_service.dart # Persistência local da empresa selecionada
@@ -229,31 +173,34 @@ lib/
 
 A comunicação com o ERP ocorre via requisições HTTP POST direcionadas ao endpoint de serviços do Senior Sapiens G5:
 
-```
+```text
 http://{server}:{port}/g5-senior-services/sapiens_Synccom_senior_g5_f1_int_suprimentos_estoque
 ```
 
 ### 1. Envelope de Requisição (SOAP 1.1)
+
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.senior.com.br">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <ser:Saldo>
-         <user>{seniorUser}</user>
-         <password>{seniorPassword}</password>
-         <encryption>0</encryption>
-         <parameters>
-            <codDes>{termo_de_busca}</codDes>
-         </parameters>
-      </ser:Saldo>
-   </soapenv:Body>
+  <soapenv:Header />
+  <soapenv:Body>
+    <ser:Saldo>
+      <user>{seniorUser}</user>
+      <password>{seniorPassword}</password>
+      <encryption>0</encryption>
+      <parameters>
+        <codDes>{termo_de_busca}</codDes>
+      </parameters>
+    </ser:Saldo>
+  </soapenv:Body>
 </soapenv:Envelope>
 ```
 
 ### 2. Tratamento e Parser da Resposta XML
+
 O DataSource analisa o XML retornado utilizando a biblioteca `xml`:
+
 1. **Verificação de Erro da Camada Senior:** Intercepta a tag `<erroExecucao>` e mapeia mensagens amigáveis de conexão ou credenciais.
-2. **Extração de Itens:** Percorre os nós `<produtos>` capturando `codPro`, `desPro`, `desDep`, `codEmp`, `desDer`, e as quantidades (`qtdEst`, `qtdRes`, `qtdBlo`, `qtdCcl`, `qtdCfo`).
+2. **Extração de Itens:** Percorre os nós `<produtos>` capturando `codPro`, `desPro`, `desDep`, `codEmp`, `desDer` e as quantidades (`qtdEst`, `qtdRes`, `qtdBlo`, `qtdCcl`, `qtdCfo`).
 3. **Agrupamento em Memória:** Agrupa diferentes linhas de depósitos sob a mesma `StockEntity` correspondente ao produto, preparando os dados para a exibição hierárquica.
 
 ---
@@ -273,6 +220,7 @@ Para preservar a integridade do código e proteger credenciais sensíveis de inf
 ## 🚀 Como Executar o Projeto Localmente
 
 ### Pré-requisitos
+
 - [Flutter SDK](https://flutter.dev/docs/get-started/install) (versão 3.7.0 ou superior)
 - [Dart SDK](https://dart.dev/get-dart)
 - Dispositivo Android/iOS ou Emulador
@@ -281,17 +229,20 @@ Para preservar a integridade do código e proteger credenciais sensíveis de inf
 ### Passo a Passo
 
 1. **Clone o repositório:**
+
    ```bash
    git clone https://github.com/seu-usuario/stocker.git
    cd stocker
    ```
 
 2. **Instale as dependências:**
+
    ```bash
    flutter pub get
    ```
 
 3. **Configure o Firebase:**
+
    - Crie um projeto no Firebase Console com **Authentication** (Google Sign-In ativado) e **Cloud Firestore**.
    - No Firestore, crie as coleções:
      - `users`: `{ uid, name, email, profile }` (defina `profile: "admin"` no seu documento para obter acesso de administrador).
@@ -299,6 +250,7 @@ Para preservar a integridade do código e proteger credenciais sensíveis de inf
    - Adicione seu arquivo `google-services.json` em `android/app/` (utilizando o [`google-services.json.example`](android/app/google-services.json.example) como base ou via `flutterfire configure`).
 
 4. **Execute a aplicação:**
+
    ```bash
    flutter run
    ```
@@ -307,14 +259,14 @@ Para preservar a integridade do código e proteger credenciais sensíveis de inf
 
 ## 👨‍💻 Desenvolvedor & Autor
 
-Desenvolvido por **Misael Dias**  
-- **LinkedIn:** [linkedin.com/in/misael-dias](https://linkedin.com) *(ou adicione seu link de perfil)*
+Desenvolvido por **Misael Dias**
+
+- **LinkedIn:** [linkedin.com/in/misael-dias](https://www.linkedin.com/in/misaeldiaslima/) *(ou adicione seu link de perfil)*
 - **GitHub:** [@misael2code](https://github.com/misael2code)
-- **E-mail:** msl.trp@gmail.com
+- **E-mail:** [msl.trp@gmail.com](mailto:msl.trp@gmail.com)
 
 ---
 
 <div align="center">
   <sub>Stocker • Conectando a agilidade do mobile à robustez do ERP Senior Sistemas.</sub>
 </div>
->>>>>>> 38c0b11 (disponibilidade pública do repositório)
