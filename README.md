@@ -261,7 +261,7 @@ Para preservar a integridade do código e proteger credenciais sensíveis de inf
 
 Desenvolvido por **Misael Dias**
 
-- **LinkedIn:** [linkedin.com/in/misael-dias](https://www.linkedin.com/in/misaeldiaslima/)
+- **LinkedIn:** [linkedin.com/in/misaeldiaslima](https://www.linkedin.com/in/misaeldiaslima/)
 - **GitHub:** [@misael2code](https://github.com/misael2code)
 - **E-mail:** [msl.trp@gmail.com](mailto:msl.trp@gmail.com)
 
